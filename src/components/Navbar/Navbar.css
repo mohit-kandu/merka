@@ -1,0 +1,31 @@
+.navbar{
+    background-image:url("../../assets/Header-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.nav-link{
+    display: inline-block;
+    font-weight: 600;
+    transition: all 200ms ease;
+    position: relative;
+    width: fit-content;
+}
+  .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    /* background-color: #190fadde; */
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
